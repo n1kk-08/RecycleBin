@@ -1,15 +1,12 @@
 import React from 'react'
 import CartDetails from './CartDetails'
 
-export const metaData = {
-    title: 'Shopping Cart',
+export const metadata = {
+  title: 'Shopping Cart',
 }
 
 const CartPage = () => {
-  return (
-    <CartDetails />
-
-  )
+  return <CartDetails />
 }
 
 export default CartPage
