@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Menu from './Menu'
 import { SearchBox } from './SearchBox'
+import Image from 'next/image'
 
 const Header = () => {
   return (
@@ -24,9 +25,18 @@ const Header = () => {
                 ></path>
               </svg>
             </label>
-            <Link href="/" className="btn btn-ghost text-lg">
-              RecycleBin
-            </Link>
+            <Link href="/" >
+              
+            
+            <Image
+            src="/logo.jpeg"
+            alt="Logo"
+            width={120}
+            height={90}
+            className="object-cover"
+          />
+          </Link> 
+       
           </div>
 
           <Menu />
