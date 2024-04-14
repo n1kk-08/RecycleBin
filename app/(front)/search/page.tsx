@@ -6,15 +6,15 @@ import Link from 'next/link'
 const sortOrders = ['newest', 'lowest', 'highest', 'rating']
 const prices = [
   {
-    name: '$1 to $50',
+    name: '₹1 to ₹50',
     value: '1-50',
   },
   {
-    name: '$51 to $200',
+    name: '₹51 to ₹200',
     value: '51-200',
   },
   {
-    name: '$201 to $1000',
+    name: '₹201 to ₹1000',
     value: '201-1000',
   },
 ]
@@ -104,7 +104,7 @@ export default async function SearchPage({
   return (
     <div className="grid md:grid-cols-5 md:gap-5">
       <div>
-        <div className="text-xl pt-3">Department</div>
+        <div className="text-xl font-bold pt-3">Department</div>
         <div>
           <ul>
             <li>
@@ -132,7 +132,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div>
-          <div className="text-xl pt-3">Price</div>
+          <div className="text-xl font-bold pt-3">Price</div>
           <ul>
             <li>
               <Link
@@ -159,7 +159,7 @@ export default async function SearchPage({
           </ul>
         </div>
         <div>
-          <div className="text-xl pt-3">Customer Review</div>
+          <div className="text-xl font-bold  pt-3">Customer Review</div>
           <ul>
             <li>
               <Link
@@ -188,7 +188,7 @@ export default async function SearchPage({
       </div>
       <div className="md:col-span-4">
         <div className="flex items-center justify-between  py-4">
-          <div className="flex items-center">
+          <div className="flex items-center font-bold badge badge-outline">
             {products.length === 0 ? 'No' : countProducts} Results
             {q !== 'all' && q !== '' && ' : ' + q}
             {category !== 'all' && ' : ' + category}
@@ -204,8 +204,26 @@ export default async function SearchPage({
               </Link>
             ) : null}
           </div>
-          <div>
-            Sort by{' '}
+
+          {/* <div className='flex items-center gap-1'>
+            <div className='flex items-center font-bold badge badge-outline'>
+            {products.length === 0 ? 'No' : countProducts} Results
+            </div>
+            <div className='flex items-center font-bold badge badge-outline'>
+            {q !== 'all' && q !== '' && ' : ' + q}
+            {category !== 'all' && category}
+            </div>
+            <div className='flex items-center font-bold badge badge-outline'>
+            {price !== 'all' && ' Price: ' + price}
+            </div>
+            <div className='flex items-center font-bold badge badge-outline'>
+            {rating !== 'all' && ' : Rating ' + rating + ' & up'}
+
+            </div>
+          </div> */}
+
+          <div className='font-bold badge badge-ghost'>
+            Sort by: {' '}
             {sortOrders.map((s) => (
               <Link
                 key={s}
