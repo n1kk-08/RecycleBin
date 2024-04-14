@@ -1,10 +1,21 @@
+'use client'
+
 import Link from 'next/link'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Menu from './Menu'
 import { SearchBox } from './SearchBox'
 import Image from 'next/image'
 
+
+
 const Header = () => {
+  const [theme, setTheme] = useState('light');
+  useEffect(() => {
+    window.addEventListener('themeChange', (event: Event) => {
+      setTheme((event as CustomEvent).detail.theme);
+    });
+  }, []);
+  
   return (
     <header>
       <nav>
@@ -29,11 +40,11 @@ const Header = () => {
               
             
             <Image
-            src="/logo.jpeg"
+            src={theme === 'light' ? '/logo.jpeg' : '/l2.png'}
             alt="Logo"
             width={120}
             height={90}
-            className="object-cover"
+            className="object-cover ml-9"
           />
           </Link> 
        
@@ -47,6 +58,7 @@ const Header = () => {
       </nav>
     </header>
   )
+
 }
 
 export default Header

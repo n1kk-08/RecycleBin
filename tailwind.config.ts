@@ -10,7 +10,7 @@ const config: Config = {
     themes: [
       {
         light: {
-          ...require('daisyui/src/theming/themes')['light'],
+          ...require('daisyui/src/theming/themes')['forest'],
           primary: '#fbbf24',
           '.toaster-con': {
             'background-color': 'white',
@@ -18,7 +18,7 @@ const config: Config = {
           },
         },
         dark: {
-          ...require('daisyui/src/theming/themes')['dark'],
+          ...require('daisyui/src/theming/themes')['light'],
           primary: '#fbbf24',
           '.toaster-con': {
             'background-color': 'black',
@@ -26,6 +26,8 @@ const config: Config = {
           },
         },
       },
+     
+
     ],
   },
   darkMode: ['class', '["dark"]'],
