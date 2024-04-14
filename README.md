@@ -10,89 +10,39 @@
 | Authentication | Auth.js, Google Auth                                   |
 | Others         | Cloudinary, Zustand, SWR                               |
 
-![next amazona v2](/public/app.jpg)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Resources
+## Getting Started
 
-- Youtube Video : https://youtu.be/---
-- Demo Website :  https://next-amazona-v2.vercel.app/
-- Source Code   :  https://github.com/basir/next-amazona-v2
-- Full Course: [basir.thinkific.com](https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-js?coupon=SAVE90)
+First, run the development server:
 
-## What you will learn
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- NextJS basics like setting up project, creating pages and data fetching
-- NextJS advanced topics like app router, server component & actions, image optimization,
-- Tailwind CSS and DaisyUI framework to build responsive website using custom theme, animation and carousel
-- ReactJS including decomposing components, state management with Zustand and data fetching using swr
-- Auth.js package to authenticate customers and admin users
-- MongoDB and Mongoose to save and retrieve data like products, orders and users
-- PayPal developer api to make online payment
-- Deploy web applications on servers like Vercel and Netlify
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Full Course
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Get this course by 90% discount on Thinkific:
-https://basir.thinkific.com/courses/build-ecommerce-website-like-amazon-by-next-js?coupon=SAVE90
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Run Locally
+## Learn More
 
-1. Clone repo
+To learn more about Next.js, take a look at the following resources:
 
-   ```shell
-    $ git clone git@github.com:basir/next-amazona-v2.git
-    $ cd next-amazona-v2
-   ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-2. Create .env File
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-   - duplicate .env.example and rename it to .env
+## Deploy on Vercel
 
-3. Setup MongoDB
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-   - Local MongoDB
-     - Install it from [here](https://www.mongodb.com/try/download/community)
-     - In .env file update MONGODB_URI=mongodb://localhost/amazona
-   - OR Atlas Cloud MongoDB
-     - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
-     - In .env file update MONGODB_URI=mongodb+srv://your-db-connection
-
-4. Install and Run
-
-   ```shell
-     npm install
-     npm run dev
-   ```
-
-5. Seed Data
-
-   - Run this on browser: http://localhost:3000/api/seed
-   - It returns admin email and password and 6 sample products
-
-6. Admin Login
-
-   - Run http://localhost:3000/signin
-   - Enter admin email "admin@example.com" and password "123456" and click Signin
-
-## Promo
-
-Welcome to version 2 of next.js amazona. it is coding course to build a full functional ecommerce website like amazon using next.js lastest features like App router, sever components and actions and route handler.
-
-## Lessons
-
-1. Introduction
-2. Install Tools
-3. Create Next App
-4. Publish to Github
-5. List Products
-   1. create product type
-   2. add data.ts
-   3. add images
-   4. render products
-6. Create Product Details
-   1. create product page
-   2. create 3 columns
-   3. show image in first column
-   4. show product info in second column
-   5. show add to cart action on third column
-   6. add styles
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
