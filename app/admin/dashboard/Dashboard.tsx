@@ -120,7 +120,7 @@ const Dashboard = () => {
         <div className="stat">
           <div className="stat-title">Sales</div>
           <div className="stat-value text-primary">
-            ${formatNumber(summary.ordersPrice)}
+            ₹{formatNumber(summary.ordersPrice)}
           </div>
           <div className="stat-desc">
             <Link href="/admin/orders">View sales</Link>

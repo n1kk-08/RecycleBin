@@ -44,7 +44,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
     setValue('price', product.price)
     setValue('image', product.image)
     setValue('category', product.category)
-    setValue('brand', product.brand)
+    // setValue('brand', product.brand)
     setValue('countInStock', product.countInStock)
     setValue('description', product.description)
   }, [product, setValue])
@@ -143,7 +143,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
           </div>
           <FormInput name="Price" id="price" required />
           <FormInput name="Category" id="category" required />
-          <FormInput name="Brand" id="brand" required />
+          {/* <FormInput name="Brand" id="brand" required /> */}
           <FormInput name="Description" id="description" required />
           <FormInput name="Count In Stock" id="countInStock" required />
 

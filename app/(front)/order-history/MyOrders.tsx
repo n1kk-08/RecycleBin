@@ -38,7 +38,7 @@ export default function MyOrders() {
             <tr key={order._id}>
               <td>{order._id.substring(20, 24)}</td>
               <td>{order.createdAt.substring(0, 10)}</td>
-              <td>${order.totalPrice}</td>
+              <td>₹{order.totalPrice}</td>
               <td>
                 {order.isPaid && order.paidAt
                   ? `${order.paidAt.substring(0, 10)}`
