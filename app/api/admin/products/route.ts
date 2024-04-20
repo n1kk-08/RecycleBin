@@ -27,14 +27,14 @@ export const POST = auth(async (req: any) => {
   }
   await dbConnect()
   const product = new ProductModel({
-    name: 'sample name',
-    slug: 'sample-name-' + Math.random(),
+    name: 'Enter the name of Product here',
+    slug: 'url' + Math.random()*1000,
     image: '/images/shirt1.jpg',
     price: 0,
-    category: 'sample category',
+    category: 'Enter the Waste category here',
     brand: 'sample brand',
     countInStock: 0,
-    description: 'sample description',
+    description: 'Enter Description of Pruoduct here',
     rating: 0,
     numReviews: 0,
   })

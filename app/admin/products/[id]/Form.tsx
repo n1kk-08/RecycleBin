@@ -122,7 +122,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
 
   return (
     <div>
-      <h1 className="text-2xl py-4">Edit Product {formatId(productId)}</h1>
+      <h1 className="text-2xl py-4 font-bold">Add new Product</h1>
       <div>
         <form onSubmit={handleSubmit(formSubmit)}>
           <FormInput name="Name" id="name" required />
@@ -155,7 +155,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
             {isUpdating && <span className="loading loading-spinner"></span>}
             Update
           </button>
-          <Link className="btn ml-4 " href="/admin/products">
+          <Link className="btn ml-4 mb-5" href="/admin/products">
             Cancel
           </Link>
         </form>

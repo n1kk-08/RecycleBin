@@ -10,7 +10,7 @@ export default function Orders() {
 
   return (
     <div>
-      <h1 className="py-4 text-2xl">Orders</h1>
+      <h1 className="py-4 text-2xl font-bold">Orders</h1>
       <div className="overflow-x-auto">
         <table className="table">
           <thead>

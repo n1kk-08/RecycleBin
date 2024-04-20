@@ -79,7 +79,7 @@ export default function OrderDetails({
 
   return (
     <div>
-      <h1 className="text-2xl py-4">Order {orderId}</h1>
+      <h1 className="text-2xl py-4 ml-2 font-bold">Order Details</h1>
       <div className="grid md:grid-cols-4 md:gap-5 my-4">
         <div className="md:col-span-3">
           <div className="card bg-base-300">
