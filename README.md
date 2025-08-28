@@ -1,9 +1,7 @@
 
 # ♻️ RecycleBin – A Marketplace for Recyclable Waste  
 
-RecycleBin is a full-stack **e-commerce marketplace** for buying and selling **recyclable waste materials**.  
-Built with **Next.js 13+ (App Router, Server Components, Server Actions)**, it enables sustainable trade while encouraging recycling practices.  
-
+RecycleBin is a full-stack **e-commerce marketplace** for buying and selling **recyclable waste materials**. 
 ---
 
 ## 🚀 Tech Stack  
@@ -60,16 +58,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Setup environment variables
 
 ```bash
-MONGODB_URI=your_mongodb_connection_string
-NEXTAUTH_SECRET=your_auth_secret
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-STRIPE_SECRET_KEY=your_stripe_secret
-PAYPAL_CLIENT_ID=your_paypal_client_id
-CLOUDINARY_URL=your_cloudinary_url
+MONGODB_URI=""
+
+NEXT_PUBLIC_APP_NAME=""
+
+AUTH_URL=http://localhost:3000
+AUTH_SECRET=""
+
+PAYPAL_API_URL=""
+PAYPAL_CLIENT_ID=""
+PAYPAL_APP_SECRET="your_app_secret"
+
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
+NEXT_PUBLIC_CLOUDINARY_API_KEY="your_api_key"
+CLOUDINARY_SECRET="your_secret"
 ```
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
@@ -83,16 +88,12 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🌍 Project Vision
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+RecycleBin promotes sustainability by creating a platform where people and businesses can buy and sell recyclable materials. This empowers communities to:
 
-## Learn More
+- Reduce waste 🌱
 
-To learn more about Next.js, take a look at the following resources:
+- Earn money from recyclables 💰
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
+- Support circular economy 🔄
