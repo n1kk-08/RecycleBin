@@ -1,4 +1,47 @@
-# Build Full-ECommerce By Next.js 13+, App Router, Server Components and Actions
+
+# ♻️ RecycleBin – A Marketplace for Recyclable Waste  
+
+RecycleBin is a full-stack **e-commerce marketplace** for buying and selling **recyclable waste materials**.  
+Built with **Next.js 13+ (App Router, Server Components, Server Actions)**, it enables sustainable trade while encouraging recycling practices.  
+
+---
+
+## 🚀 Tech Stack  
+
+| Category        | Stack                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| **Framework**   | [Next.js 13+](https://nextjs.org/) (App Router, Server Components, Actions) |
+| **Language**    | TypeScript                                                           |
+| **UI**          | Tailwind CSS, DaisyUI, Chart.js                                      |
+| **Database**    | MongoDB, Mongoose                                                    |
+| **Authentication** | Auth.js, Google OAuth                                             |
+| **Payments**    | PayPal, Stripe                                                       |
+| **Deployment**  | GitHub, Vercel, MongoDB Atlas                                        |
+| **Others**      | Cloudinary (image storage), Zustand (state management), SWR (data fetching) |
+
+---
+
+## ✨ Features  
+
+- 🔑 **Authentication** with Google (Auth.js)  
+- 🛍️ **Buy & Sell recyclable waste** through marketplace listings  
+- 💳 **Secure payments** via Stripe & PayPal  
+- 📊 **Analytics dashboards** with Chart.js  
+- ☁️ **Cloudinary integration** for image uploads (product photos)  
+- ⚡ **Server Components & Actions** for optimized performance  
+- 🗄️ **MongoDB Atlas** for scalable data storage  
+- 🎨 **Responsive UI** using Tailwind & DaisyUI  
+
+---
+
+## 🛠️ Getting Started  
+
+### 1. Clone the repository  
+
+```bash
+git clone https://github.com/your-username/recyclebin.git
+cd recyclebin
+
 
 |                |                                                        |
 | -------------- | ------------------------------------------------------ |
@@ -9,10 +52,22 @@
 | Deployment     | Github, Vercel, MongoDB Atlas                          |
 | Authentication | Auth.js, Google Auth                                   |
 | Others         | Cloudinary, Zustand, SWR                               |
-
+```
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+
+Setup environment variables
+
+```bash
+MONGODB_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_auth_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+STRIPE_SECRET_KEY=your_stripe_secret
+PAYPAL_CLIENT_ID=your_paypal_client_id
+CLOUDINARY_URL=your_cloudinary_url
+```
 
 First, run the development server:
 
@@ -41,8 +96,3 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
